@@ -29,8 +29,9 @@ class GameEngine:
             self.player.move(10, self.height)
 
     def update(self):
-        self.ball.move()
-        self.ball.check_collision(self.player, self.ai)
+        # Pass the paddles to the move method for collision checking
+        self.ball.move(self.player, self.ai) 
+        # self.ball.check_collision(self.player, self.ai) # REMOVE THIS LINE
 
         if self.ball.x <= 0:
             self.ai_score += 1
