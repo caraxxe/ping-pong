@@ -82,3 +82,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    # main.py
+
+# Initialize pygame/Start application
+pygame.init()
+# --- NEW CODE FOR TASK 4 ---
+pygame.mixer.init() 
+# ---------------------------
+
+# ... (rest of main.py)
